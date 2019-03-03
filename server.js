@@ -55,12 +55,12 @@ app.use( (req,res,next) => {
 
 } );
 
-app.use( (req,res,next)=>{
+// app.use( (req,res,next)=>{
 
-    res.send('<h1>Website Under Maintainace!</h1>');
-    //res.send('')
-    next();
-})
+//     res.send('<h1>Fuck you Stux Le Wena Khino Website Under Maintainace!</h1>');
+//     //res.send('')
+//     next();
+// })
 
 app.get('/',(req,res) =>{
 
@@ -83,8 +83,8 @@ app.get('/',(req,res) =>{
 
 app.get('/about',(req,res) =>{
 
-  res.send('<h1>My First Express Application</h>');
-
+  res.send('<h1>My First Express Application</h> \n <h3>Khino and Stux ba lepeleditse Mae!</h3>');
+  //res.send('<h3>Khino and Stux ba lepeleditse Mae!</h3>')
 })
 
 app.listen(port, () =>{
