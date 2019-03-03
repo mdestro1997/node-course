@@ -35,7 +35,7 @@
 const express = require('express');
 const fs = require('fs');
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 //using MiddleWare by calling function 'app.use()'
 app.use( (req,res,next) => {
