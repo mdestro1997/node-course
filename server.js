@@ -59,6 +59,7 @@ app.use( (req,res,next)=>{
 
     res.send('<h1>Website Under Maintainace!</h1>');
     //res.send('')
+    next();
 })
 
 app.get('/',(req,res) =>{
